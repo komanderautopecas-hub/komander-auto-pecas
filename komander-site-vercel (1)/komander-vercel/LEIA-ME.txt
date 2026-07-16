@@ -1,0 +1,20 @@
+SITE KOMANDER AUTO PECAS - VERSAO PARA VERCEL
+
+OPCAO RECOMENDADA: GITHUB
+1. Crie um repositorio novo no GitHub chamado komander-auto-pecas.
+2. Envie todo o conteudo desta pasta para o repositorio.
+3. Na tela Novo projeto da Vercel, clique em Continue com GitHub.
+4. Escolha o repositorio komander-auto-pecas.
+5. Em Framework Preset, selecione Other.
+6. Deixe Build Command e Output Directory vazios.
+7. Clique em Deploy.
+
+OPCAO DIRETA
+Na tela Novo projeto da Vercel, clique em pasta e selecione esta pasta completa.
+
+IMPORTANTE
+Nao envie somente o arquivo index.html. As pastas assets e catalog e o arquivo
+komander-logo.jpeg precisam ser enviados junto para manter o design e as imagens.
+
+Esta copia preserva o site e o catalogo atuais. Para futuras atualizacoes de
+produtos, imagens e precos, o fluxo pelo GitHub e o mais recomendado.
