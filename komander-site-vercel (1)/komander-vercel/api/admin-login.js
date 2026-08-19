@@ -1,4 +1,4 @@
-const crypto = require('crypto');
+import crypto from 'node:crypto';
 
 function sign(value, secret) {
   return crypto.createHmac('sha256', secret).update(value).digest('hex');
@@ -10,7 +10,7 @@ function safeEqual(a, b) {
   return aa.length === bb.length && crypto.timingSafeEqual(aa, bb);
 }
 
-module.exports = async function handler(req, res) {
+export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Método não permitido.' });
   const password = process.env.ADMIN_PASSWORD;
   const secret = process.env.SESSION_SECRET;
