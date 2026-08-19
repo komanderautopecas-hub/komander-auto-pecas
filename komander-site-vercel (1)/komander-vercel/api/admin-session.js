@@ -1,10 +1,10 @@
-const crypto = require('crypto');
+import crypto from 'node:crypto';
 
 function sign(value, secret) {
   return crypto.createHmac('sha256', secret).update(value).digest('hex');
 }
 
-module.exports = function handler(req, res) {
+export default function handler(req, res) {
   const secret = process.env.SESSION_SECRET;
   if (!secret) return res.status(401).json({ authenticated: false });
   const cookies = Object.fromEntries((req.headers.cookie || '').split(';').map(v => v.trim().split('=')));
